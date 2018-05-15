@@ -78,6 +78,10 @@ There are several techniques that can be used for the collission resolution in h
    ```
    
    
+   ### StringBuffer and StringBuilder :
+   These classes can be used when there is a need for a lot of modifications to a `String` (as Strings are immutable). `StringBuilder` is not thread-safe, though they are faster than `StringBuffer`.`String` can be visualized as `char` array containing a series of UTF-16 characters(16 bits), an `int` offset into the array and an `int` length.
+   
+   
   References:
   
   https://en.wikipedia.org/wiki/Java_hashCode()
