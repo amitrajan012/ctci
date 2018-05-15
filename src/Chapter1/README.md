@@ -1,7 +1,7 @@
 ## Chapter 1 | Arrays and Strings
-### Hash Tables
+### Hash Tables :
 Hashing is a technique used to uniquely identify a specific object from a group of similar objects. Every object is assigned 
-a key which can be used to retrieve information about it. If the keys are small integers, an array can be used to impelement 
+a key which can be used to retrieve information about it. If the keys are small integers, an array can be used to implement 
 a symbol table, where keys serve as the index of the array (i.e. the value associated with key i is stored in the array 
 position i). For larger and more complicated keys, different **hashing techniques** are used to convert keys into array indices.
 
@@ -47,11 +47,11 @@ public final class PhoneNumber {
 ```
 
 There are several techniques that can be used for the collission resolution in hashing. Some of them are as follows:
-1) **Seperate Chaining(Open hashing):**
-  In seperate chaining, each element of the hash table is a linked list. An element is stored in the specified linked list in the hash table. In the case of collision (two elements having the same hash value), both the elements are stored in the same linked list. For uniformly distributed keys, the average cost of the lookup depends on the average numeber of keys per linked list. The worst case cost is proportional to the total entries in the hash table (when all the entries are inserted into the same linked list).
+1) **Separate Chaining(Open hashing):**
+  In separate chaining, each element of the hash table is a linked list. An element is stored in the specified linked list in the hash table. In the case of collision (two elements having the same hash value), both the elements are stored in the same linked list. For uniformly distributed keys, the average cost of the lookup depends on the average number of keys per linked list. The worst case cost is proportional to the total entries in the hash table (when all the entries are inserted into the same linked list).
   
 2) **Linear Probing (Open addressing or Closed hashing):**
-  In Linear Probing/ Open Addressing, all the elements are stored in the hasht table itself and hence the size of the table must be greater than or equal to the total number of keys. For insertion, Keep probing until an empty slot is found. Once an empty slot is found, insert k. For searching, keep probing until key is found or an empty slot is reached. Deletion is performed by marking the slots of deleted key as "deleted". Insert can insert an item in a deleted slot, but search doesn’t stop at a deleted slot. The basic algorithm for the linear probing is as follows:
+  In Linear Probing/ Open Addressing, all the elements are stored in the hash table itself and hence the size of the table must be greater than or equal to the total number of keys. For insertion, Keep probing until an empty slot is found. Once an empty slot is found, insert k. For searching, keep probing until key is found or an empty slot is reached. Deletion is performed by marking the slots of deleted key as "deleted". Insert can insert an item in a deleted slot, but search doesn’t stop at a deleted slot. The basic algorithm for the linear probing is as follows:
   ```
   i=0
   while(slot hash(x)+i % M is full) { //Where M is the size of the hash table
@@ -68,6 +68,16 @@ There are several techniques that can be used for the collission resolution in h
   insert in slot hash(x)+i^2
   ```
   
+  
+  ### ArrayList(Dynamically Resizing Array) :
+  ArrayList in JAVA is the resizable-array implementation of the List interface. It implements all optional list operations, and permits all elements, including `null`. The `size`, `isEmpty`, `get`, `set`, `iterator`, and `listIterator` operations run in constant time. The `add` operation runs in amortized constant time, that is, adding n elements requires `O(n)` time. All of the other operations run in linear time (roughly speaking). The constant factor is low compared to that for the `LinkedList` implementation.
+
+   The ArrayList implementation in JAVA is not synchronized (thread safe). It can be made thread safe using:
+   ```
+   List list = Collections.synchronizedList(new ArrayList(...));
+   ```
+   
+   
   References:
   
   https://en.wikipedia.org/wiki/Java_hashCode()
@@ -79,5 +89,7 @@ There are several techniques that can be used for the collission resolution in h
   https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/
   
   https://www.geeksforgeeks.org/hashing-set-3-open-addressing/
+  
+  https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
   
   
