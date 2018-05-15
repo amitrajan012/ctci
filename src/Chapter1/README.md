@@ -70,14 +70,14 @@ There are several techniques that can be used for the collission resolution in h
   
   References:
   
-  [https://en.wikipedia.org/wiki/Java_hashCode()]
+  https://en.wikipedia.org/wiki/Java_hashCode()
   
-  [https://algs4.cs.princeton.edu/34hash/]
+  https://algs4.cs.princeton.edu/34hash/
   
-  [https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/]
+  https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/
   
-  [https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/]
+  https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/
   
-  [https://www.geeksforgeeks.org/hashing-set-3-open-addressing/]
+  https://www.geeksforgeeks.org/hashing-set-3-open-addressing/
   
   
