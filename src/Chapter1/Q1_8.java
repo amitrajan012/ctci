@@ -12,11 +12,9 @@ public class Q1_8 {
 		StringBuilder sb = new StringBuilder(s1);
 		sb.append(s1);
 		return sb.toString().contains(s2);
-		
 	}
 	
 	public static void main(String[] args) {
 		System.out.println(checkSubstring("erbottlewat", "waterbottle"));
 	}
-
 }
