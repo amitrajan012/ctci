@@ -135,3 +135,7 @@ public void reverse() {
 }
 ```
 8. **Cloning:** For the cloning of the list, if the `colne()` method of the `Object class` is used, a shallow copy of the list is made. It will create a copy of the first node and will share the rest. Cloning of a linked list can be implemented by traversing the original list and copying each node by `addFirst()` method. The reverse of the resultant list is the new cloned list.   
+
+References & Image Source:
+  
+  https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html
