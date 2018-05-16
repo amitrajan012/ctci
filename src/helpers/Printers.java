@@ -1,7 +1,7 @@
 package helpers;
 /**
  * 
- * Courtsey: https://github.com/wzhishen/cracking-the-coding-interview/tree/master/src/helpers
+ * Courtesy: https://github.com/wzhishen/cracking-the-coding-interview/tree/master/src/helpers
  *
  */
 
@@ -12,6 +12,11 @@ public class Printers {
 	
 	public static void println() {
         print(lineSeparator());
+    }
+	
+	public static void println(Object o) {
+        print(o);
+        println();
     }
 	
 	public static void printArray(int[][] a) {
