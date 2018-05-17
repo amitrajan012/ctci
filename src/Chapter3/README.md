@@ -73,3 +73,7 @@ clear():
     queue[front] = null
     front = front+1
 ```
+
+References & Image Source:
+  
+  https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html
