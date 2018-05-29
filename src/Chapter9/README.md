@@ -60,7 +60,7 @@ algorithm (when pivot is the element at last index is as follows):
 
 The time complexity of quick sort can be expressed as: ` T(n) = T(k) + T(n-k-1) + O(n)`, where k is the number of elements 
 which is smaller than pivot. Hence the worst case time complexity is `O(n^2)`, when `k=0` (i.e. picked pivot is always smallest 
-or largets element). Best case time occurs when pivot is always the middle element (`k = n/2`), which gives best case time 
+or largest element). Best case time occurs when pivot is always the middle element (`k = n/2`), which gives best case time 
 complexity as `O(nlogn)`. The average case time complexity is `O(nlogn)` as well.
 
 * **Bucket Sort** :
